@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="mockuppic/favicon.png" rel="shortcut icon" />
+    <title>Kalê Beauty</title>
+    <script src="../js/jquery-3.7.1.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="col-sm-11 col-10 header-container">
+            <div class="header-hb" id="header-hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="index.html" class="header-logo">
+                <img src="mockuppic\logo-2-w.png" />
+            </a>
+            <nav class="header-main-nav" id="header-main-nav">
+                <div class="search">
+                    <input type="text" id="search" placeholder="SEARCH PRODUCTS">
+                    <svg fill="#2A2825" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="auto" height="auto"
+                        viewBox="0 0 30 30">
+                        <path
+                            d="M 13 3 C 7.4886661 3 3 7.4886661 3 13 C 3 18.511334 7.4886661 23 13 23 C 15.396652 23 17.59741 22.148942 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148942 17.59741 23 15.396652 23 13 C 23 7.4886661 18.511334 3 13 3 z M 13 5 C 17.430666 5 21 8.5693339 21 13 C 21 17.430666 17.430666 21 13 21 C 8.5693339 21 5 17.430666 5 13 C 5 8.5693339 8.5693339 5 13 5 z">
+                        </path>
+                    </svg>
+                </div>
+                <a href="product.html">
+                    ALL
+                    <label id="sublist-btn1">
+                        ▲
+                    </label>
+                    <ul class="header-sub-nav">
+                        <li>
+                            SKINCARE
+                        </li>
+                        <li>
+                            CLEANSING
+                        </li>
+                        <li>
+                            HAIR
+                        </li>
+                        <li>
+                            FRAGRANCE
+                        </li>
+                        <li>
+                            SET
+                        </li>
+                    </ul>
+                </a>
+                <a href="product.html">BEST</a>
+                <a>ABOUT</a>
+                <a href="blog.html">BLOG</a>
+            </nav>
+            <div class="header-icon">
+                <a class="search">
+                    <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="auto" height="auto"
+                        viewBox="0 0 30 30">
+                        <path
+                            d="M 13 3 C 7.4886661 3 3 7.4886661 3 13 C 3 18.511334 7.4886661 23 13 23 C 15.396652 23 17.59741 22.148942 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148942 17.59741 23 15.396652 23 13 C 23 7.4886661 18.511334 3 13 3 z M 13 5 C 17.430666 5 21 8.5693339 21 13 C 21 17.430666 17.430666 21 13 21 C 8.5693339 21 5 17.430666 5 13 C 5 8.5693339 8.5693339 5 13 5 z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="checkout.html" class="cart">
+                    <svg width="auto" height="auto" viewBox="0 -1 32 32" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <title>cart</title>
+                            <desc>Created with Sketch Beta.</desc>
+                            <defs> </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                sketch:type="MSPage">
+                                <g id="Icon-Set-Filled" sketch:type="MSLayerGroup"
+                                    transform="translate(-466.000000, -726.000000)" fill="#ffffff">
+                                    <path
+                                        d="M475.97,734 L473.475,726 L467,726 C466.447,726 466,726.448 466,727 C466,727.553 466.447,728 467,728 L472,728 L474.011,734 L474,734 L476,746 C476,748.209 477.791,750 480,750 L491,750 C493.209,750 495,748.209 495,746 L498,734 L475.97,734 L475.97,734 Z M490,752 C488.896,752 488,752.896 488,754 C488,755.104 488.896,756 490,756 C491.104,756 492,755.104 492,754 C492,752.896 491.104,752 490,752 L490,752 Z M480,752 C478.896,752 478,752.896 478,754 C478,755.104 478.896,756 480,756 C481.104,756 482,755.104 482,754 C482,752.896 481.104,752 480,752 L480,752 Z"
+                                        id="cart" sketch:type="MSShapeGroup"> </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a href="login.html" class="member">
+                    <svg fill="#ffffff" width="auto" height="auto" viewBox="0 0 1000.00 1000.00"
+                        xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M738 756q-45-77-131-205-6-8-14-15-2-2-1.5-4.5t2.5-3.5q60-29 97-83 40-58 40-124 0-63-31-116t-84-84-116-31-116 31-84 84-31 116q0 66 40 124 37 54 97 83 2 1 2.5 3.5T407 536q-8 7-14 15-88 130-131 205-18 32-18 52 0 27 34.5 50.5t93 37.5T500 910t128.5-14 93-37.5T756 808q0-21-18-52z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <script src="./index.js"></script>
+
+    <!-- Banner -->
+    <section class="section-banner">
+        <div class="banner-container">
+            <div class="banner-video">
+                <div class="banner-video-wrap">
+                    <video width="2048" loop autoplay muted preload="auto">
+                        <source src="mockuppic/index/banner.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="col-sm-11 col-10 banner-slogan">
+                <h2>Embrace Natural Radiance<br>Your Skin Deserves Pure Simplicity</h2>
+                <h2>Effortless Beauty, Naturally Nourished by Kale.</h2>
+            </div>
+            <a href="product.html" class="banner-shopbtn">
+                <h3>SHOP NOW</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- New Arrival -->
+    <section class="section section-newarrival">
+        <div class="col-sm-11 col-10 content-container">
+            <div class="row">
+                <a href="product.html" class="col-12">
+                    <h3>NEW ARRIVAL</h3>
+                </a>
+            </div>
+            <div class="row">
+                <!-- 商品1 -->
+                <div class="col-sm-6 col-3 item">
+                    <div class="items-img">
+                        <img src="mockuppic\index\newarrival\product-1.png" alt="">
+                        <a class="items-addbtn"><svg class="addbtn-icon" xmlns="http://www.w3.org/2000/svg"
+                                height="42px" viewBox="0 -960 960 960" width="42px" fill="#fff">
+                                <path d="M466-466H252v-28h214v-214h28v214h214v28H494v214h-28v-214Z" />
+                            </svg></a>
+                    </div>
+                    <div class="items-name">
+                        <h4>Hyaluronic Acid 2%</h4>
+                    </div>
+                    <div class="items-price">
+                        <h4><span>NTD</span> 360</h4>
+                    </div>
+                </div>
+                <!-- 商品2 -->
+                <div class="col-sm-6 col-3 item">
+                    <div class="items-img">
+                        <img src="mockuppic\index\newarrival\product-2.png" alt="">
+                        <a class="items-addbtn"><svg class="addbtn-icon" xmlns="http://www.w3.org/2000/svg"
+                                height="42px" viewBox="0 -960 960 960" width="42px" fill="#fff">
+                                <path d="M466-466H252v-28h214v-214h28v214h214v28H494v214h-28v-214Z" />
+                            </svg></a>
+                    </div>
+                    <div class="items-name">
+                        <h4>Moisturizing Lotion</h4>
+                    </div>
+                    <div class="items-price">
+                        <h4><span>NTD</span> 420</h4>
+                    </div>
+                </div>
+                <!-- 商品3 -->
+                <div class="col-sm-6 col-3 item">
+                    <div class="items-img">
+                        <img src="mockuppic\index\newarrival\product-3.png" alt="">
+                        <a class="items-addbtn"><svg class="addbtn-icon" xmlns="http://www.w3.org/2000/svg"
+                                height="42px" viewBox="0 -960 960 960" width="42px" fill="#fff">
+                                <path d="M466-466H252v-28h214v-214h28v214h214v28H494v214h-28v-214Z" />
+                            </svg></a>
+                    </div>
+                    <div class="items-name">
+                        <h4>Exfoliating Toner</h4>
+                    </div>
+                    <div class="items-price">
+                        <h4><span>NTD</span> 480</h4>
+                    </div>
+                </div>
+                <!-- 商品4 -->
+                <div class="col-sm-6 col-3 item">
+                    <div class="items-img">
+                        <img src="mockuppic\index\newarrival\product-4.png" alt="">
+                        <a class="items-addbtn"><svg class="addbtn-icon" xmlns="http://www.w3.org/2000/svg"
+                                height="42px" viewBox="0 -960 960 960" width="42px" fill="#fff">
+                                <path d="M466-466H252v-28h214v-214h28v214h214v28H494v214h-28v-214Z" />
+                            </svg></a>
+                    </div>
+                    <div class="items-name">
+                        <h4>Lotion + HA</h4>
+                    </div>
+                    <div class="items-price">
+                        <h4><span>NTD</span> 380</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category -->
+    <section class="section section-category">
+        <div class="col-sm-11 col-10 category-container">
+            <div class="category-container-item">
+                <h4>SKINCARE</h4>
+                <img src="mockuppic/index/category/skincare.jpg" alt="">
+            </div>
+
+            <div class="category-container-item">
+                <h4>CLEANSING</h4>
+                <img src="mockuppic/index/category/cleansing.jpg" alt="">
+            </div>
+
+            <div class="category-container-item">
+                <h4>FRAGRANCE</h4>
+                <img src="mockuppic/index/category/fragrance.jpg" alt="">
+            </div>
+
+            <div class="category-container-item">
+                <h4>HAIR</h4>
+                <img src="mockuppic/index/category/hair.jpg" alt="">
+            </div>
+
+            <div class="category-container-item">
+                <h4>SET</h4>
+                <img src="mockuppic/index/category/set.jpg" alt="">
+            </div>
+
+            <div class="category-container-item">
+                <h4>TOOL</h4>
+                <img src="mockuppic/index/category/tool.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="section section-aboutus">
+        <div class="aboutus-deco-wrap">
+            <div class="aboutus-deco1">
+                <img src="/mockuppic/index/quote.png" alt="">
+            </div>
+            <div class="aboutus-deco2">
+                <img src="/mockuppic/index/quote.png" alt="">
+            </div>
+        </div>
+        <div class="col-sm-9 col-6 aboutus-container">
+            <div class="aboutus-txt">
+                <p>At Kale, we advocate for natural beauty effortlessly achieved. Our brand thrives on simplicity,
+                    intertwining minimalist design with the richness of nature. We're committed to transparency,
+                    crafting gentle yet potent skincare solutions. Embrace authenticity and the beauty of simplicity
+                    with Kale, where each product embodies our dedication to purity and efficacy. Join us in a journey
+                    towards effortless radiance, celebrating the innate allure of natural ingredients and uncomplicated
+                    skincare rituals.</p>
+            </div>
+            <div class="aboutus-sign-wrap">
+                <div class="line"></div>
+                <div class="aboutus-img-wrap">
+                    <img src="./mockuppic/logo-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="section section-newarrival">
+        <div class="col-sm-11 col-10 content-container">
+            <div class="row">
+                <a href="blog.html" class="col-12">
+                    <h3>BLOG</h3>
+                </a>
+            </div>
+            <div class="row">
+                <!-- blog1 -->
+                <div class="col-sm-6 col-3 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/blog/1.jpg" alt="">
+                    </div>
+                    <div class="items-name">
+                        <h4>Hydration Heroes</h4>
+                    </div>
+                    <div class="items-price">
+                        <p>March 12, 2024</p>
+                    </div>
+                </div>
+                <!-- blog2 -->
+                <div class="col-sm-6 col-3 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/blog/2.jpg" alt="">
+                    </div>
+                    <div class="items-name">
+                        <h4>Back to Basics: What are Retinoids</h4>
+                    </div>
+                    <div class="items-price">
+                        <p>February 25, 2024</p>
+                    </div>
+                </div>
+                <!-- blog3 -->
+                <div class="col-sm-6 col-3 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/blog/3.jpg" alt="">
+                    </div>
+                    <div class="items-name">
+                        <h4>Winterize Your Skincare Regimen</h4>
+                    </div>
+                    <div class="items-price">
+                        <p>February 13, 2024</p>
+                    </div>
+                </div>
+                <!-- blog4 -->
+                <div class="col-sm-6 col-3 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/blog/4.jpg" alt="">
+                    </div>
+                    <div class="items-name">
+                        <h4>The Science of Hydration</h4>
+                    </div>
+                    <div class="items-price">
+                        <p>January 15, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IG -->
+    <section class="section section-ig">
+        <div class="col-sm-11 col-10 content-container">
+            <div class="row">
+                <a href="#" class="col-12">
+                    <h3>INSTAGRAM</h3>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 ig-content-container">
+            <div class="ig-content-wrap1">
+                <!-- ig1-1 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/1.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig1-2 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/2.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig1-3 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/3.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig1-4 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/4.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig1-5 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/5.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig1-6 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/6.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig1-7 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/1.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig1-8 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/2.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig1-9 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/3.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig1-10 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/4.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig1-11 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/5.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig1-12 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="ig-content-wrap2">
+                <!-- ig2-1 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/7.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig2-2 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/8.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig2-3 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/9.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig2-4 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/10.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig2-5 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/11.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig2-6 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/12.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig2-7 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/7.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig2-8 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/8.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig2-9 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/9.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig2-10 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/10.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig2-11 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/11.jpg" alt="">
+                    </div>
+                </div>
+                <!-- ig2-12 -->
+                <div class="col-sm-2 col-2 item">
+                    <div class="items-img">
+                        <img src="mockuppic/index/ig/12.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="col-sm-11 col-10 footer-container">
+            <div class="footer-info-wrap">
+                <div class="logo-followus-web">
+                    <div class="img-wrap">
+                        <img src="mockuppic/logo-1-w.png" alt="">
+                    </div>
+                    <div class="icon-wrap">
+                        <a src="#" class="icon-img">
+                            <img src="mockuppic/index/footer-followus-icon/instagram.png" alt="">
+                        </a>
+                        <a src="#" class="icon-img">
+                            <img src="mockuppic/index/footer-followus-icon/facebook.png" alt="">
+                        </a>
+                        <a src="#" class="icon-img">
+                            <img src="mockuppic/index/footer-followus-icon/line.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="contactus">
+                    <p>
+                        <span>COMPANY</span>KALE.CO<br>
+                        <span>TEL</span>03-1234-5678<br>
+                        <span>BUSINESS NO.</span>123-45-67890<br>
+                        <span>EMAIL</span>kale@gmail.com<br>
+                        <span>MON - FRI</span>10:00 - 12:30<span></span>13:30 - 17:00<br>
+                        <span>SAT, SUN, HOLIDAY OFF</span>
+                    </p>
+                </div>
+                <div class="subscribeus">
+                    <div class="subscribe-title-web">
+                        <p><span>DOWN FOR MORE? WE GOT YOU.</span><br>All the latest product drops, limited
+                            offers,<br>in-store event info–straight to your inbox.</p>
+                    </div>
+                    <div class="subscribe-title-phone">
+                        <p><span>SUBSCRIBE US</span></p>
+                    </div>
+                    <div class="content">
+                        <form class="subscription">
+                            <input type="email" class="add-email" placeholder="Email Address">
+                            <button class="submit-email-web" type="button">
+                                <span class="before-submit">SUBSCRIBE</span>
+                                <span class="after-submit">Thank you for subscribing!</span>
+                            </button>
+                            <button class="submit-email-phone" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16"
+                                    fill="#2A2825">
+                                    <path
+                                        d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

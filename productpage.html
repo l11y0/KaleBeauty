@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="mockuppic/favicon.png" rel="shortcut icon" />
+    <title>Kalê Beauty</title>
+    <script src="../js/jquery-3.7.1.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="productpage.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="col-sm-11 col-10 header-container">
+            <div class="header-hb" id="header-hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="index.html" class="header-logo-web">
+                <img src="mockuppic/logo-2.png" />
+            </a>
+            <a href="index.html" class="header-logo-phone">
+                <img src="mockuppic/logo-2-w.png" />
+            </a>
+            <nav class="header-main-nav" id="header-main-nav">
+                <div class="search">
+                    <input type="text" id="search" placeholder="SEARCH PRODUCTS">
+                    <svg fill="#2A2825" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="auto" height="auto"
+                        viewBox="0 0 30 30">
+                        <path
+                            d="M 13 3 C 7.4886661 3 3 7.4886661 3 13 C 3 18.511334 7.4886661 23 13 23 C 15.396652 23 17.59741 22.148942 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148942 17.59741 23 15.396652 23 13 C 23 7.4886661 18.511334 3 13 3 z M 13 5 C 17.430666 5 21 8.5693339 21 13 C 21 17.430666 17.430666 21 13 21 C 8.5693339 21 5 17.430666 5 13 C 5 8.5693339 8.5693339 5 13 5 z">
+                        </path>
+                    </svg>
+                </div>
+                <a href="product.html">
+                    ALL
+                    <label id="sublist-btn3">
+                        ▲
+                    </label>
+                    <ul class="header-sub-nav">
+                        <li>
+                            SKINCARE
+                        </li>
+                        <li>
+                            CLEANSING
+                        </li>
+                        <li>
+                            HAIR
+                        </li>
+                        <li>
+                            FRAGRANCE
+                        </li>
+                        <li>
+                            SET
+                        </li>
+                    </ul>
+                </a>
+                <a href="product.html">BEST</a>
+                <a>ABOUT</a>
+                <a href="blog.html">BLOG</a>
+            </nav>
+            <div class="header-icon">
+                <a class="search">
+                    <svg fill="#2A2825" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="auto" height="auto"
+                        viewBox="0 0 30 30">
+                        <path
+                            d="M 13 3 C 7.4886661 3 3 7.4886661 3 13 C 3 18.511334 7.4886661 23 13 23 C 15.396652 23 17.59741 22.148942 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148942 17.59741 23 15.396652 23 13 C 23 7.4886661 18.511334 3 13 3 z M 13 5 C 17.430666 5 21 8.5693339 21 13 C 21 17.430666 17.430666 21 13 21 C 8.5693339 21 5 17.430666 5 13 C 5 8.5693339 8.5693339 5 13 5 z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="checkout.html" class="cart-w">
+                    <svg fill="#2A2825" class="cart-svg" width="auto" height="auto" viewBox="0 -1 32 32" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <title>cart</title>
+                            <desc>Created with Sketch Beta.</desc>
+                            <defs> </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                sketch:type="MSPage">
+                                <g id="Icon-Set-Filled" sketch:type="MSLayerGroup"
+                                    transform="translate(-466.000000, -726.000000)" fill="#fff">
+                                    <path
+                                        d="M475.97,734 L473.475,726 L467,726 C466.447,726 466,726.448 466,727 C466,727.553 466.447,728 467,728 L472,728 L474.011,734 L474,734 L476,746 C476,748.209 477.791,750 480,750 L491,750 C493.209,750 495,748.209 495,746 L498,734 L475.97,734 L475.97,734 Z M490,752 C488.896,752 488,752.896 488,754 C488,755.104 488.896,756 490,756 C491.104,756 492,755.104 492,754 C492,752.896 491.104,752 490,752 L490,752 Z M480,752 C478.896,752 478,752.896 478,754 C478,755.104 478.896,756 480,756 C481.104,756 482,755.104 482,754 C482,752.896 481.104,752 480,752 L480,752 Z"
+                                        id="cart" sketch:type="MSShapeGroup"> </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a href="checkout.html" class="cart-b">
+                    <svg fill="#2A2825" class="cart-svg" width="auto" height="auto" viewBox="0 -1 32 32" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <title>cart</title>
+                            <desc>Created with Sketch Beta.</desc>
+                            <defs> </defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                sketch:type="MSPage">
+                                <g id="Icon-Set-Filled" sketch:type="MSLayerGroup"
+                                    transform="translate(-466.000000, -726.000000)" fill="#2A2825">
+                                    <path
+                                        d="M475.97,734 L473.475,726 L467,726 C466.447,726 466,726.448 466,727 C466,727.553 466.447,728 467,728 L472,728 L474.011,734 L474,734 L476,746 C476,748.209 477.791,750 480,750 L491,750 C493.209,750 495,748.209 495,746 L498,734 L475.97,734 L475.97,734 Z M490,752 C488.896,752 488,752.896 488,754 C488,755.104 488.896,756 490,756 C491.104,756 492,755.104 492,754 C492,752.896 491.104,752 490,752 L490,752 Z M480,752 C478.896,752 478,752.896 478,754 C478,755.104 478.896,756 480,756 C481.104,756 482,755.104 482,754 C482,752.896 481.104,752 480,752 L480,752 Z"
+                                        id="cart" sketch:type="MSShapeGroup"> </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a href="login.html" class="member">
+                    <svg class="member-svg" fill="#2A2825" width="auto" height="auto" viewBox="0 0 1000.00 1000.00"
+                        xmlns="http://www.w3.org/2000/svg" stroke="#2A2825">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M738 756q-45-77-131-205-6-8-14-15-2-2-1.5-4.5t2.5-3.5q60-29 97-83 40-58 40-124 0-63-31-116t-84-84-116-31-116 31-84 84-31 116q0 66 40 124 37 54 97 83 2 1 2.5 3.5T407 536q-8 7-14 15-88 130-131 205-18 32-18 52 0 27 34.5 50.5t93 37.5T500 910t128.5-14 93-37.5T756 808q0-21-18-52z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 商品列表 -->
+    <section class="section section-products">
+        <div class="col-sm-11 col-10 productlist-container">
+            <!-- 左邊分類區塊 -->
+            <nav>
+                <ul class="productlist-left">
+                    <li class="all-wrap">
+                        <a>ALL</a>
+                    </li>
+                    <li class="best-wrap">
+                        <a>BEST</a>
+                    </li>
+                    <li class="skincare-wrap">
+                        <a>SKINCARE</a>
+                        <label id="sublist-btn1">
+                            ▲
+                        </label>
+                        <ul class="productlist-sublist">
+                            <li>EXFOLIATORS</li>
+                            <li>MOISTURIZERS</li>
+                            <li>TONERS</li>
+                            <li>SERUMS</li>
+                            <li>FACE OILS</li>
+                            <li>EYES & LIPS</li>
+                        </ul>
+                    </li>
+                    <li class="cleansing-wrap">
+                        <a>CLEANSING</a>
+                        <label id="sublist-btn2">
+                            ▲
+                        </label>
+                        <ul class="productlist-sublist">
+                            <li>FACIAL CLEANSER</li>
+                            <li>MAKEUP REMOVER</li>
+                            <li>BODY WASH</li>
+                            <li>SHAMPOO</li>
+                        </ul>
+                    </li>
+                    <li class="hair-wrap">
+                        <a>HAIR</a>
+                    </li>
+                    <li class="fragrance-wrap">
+                        <a>FRAGRANCE</a>
+                    </li>
+                    <li class="set-wrap">
+                        <a>SET</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 右邊分類區塊 -->
+            <div class="productlist-right">
+                <div class="productlist-breadcrumb">
+                    <p>HOME > ALL > Hyaluronic Acid 2%</p>
+                    <hr>
+                </div>
+                <div class="productlist-content">
+                    <div class="product-info">
+                        <div class="product-info-img-wrap">
+                            <img src="mockuppic/product/product-1.png" alt="">
+                        </div>
+                        <div class="product-info-txt-wrap">
+                            <div class="product-info-txt-wrap-top">
+                                <div class="product-info-txt-statusnlike">
+                                    <div class="product-info-txt-status">HOT</div>
+                                    <svg width="22px" height="22px" viewBox="0 0 16 16"
+                                        xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                        <path
+                                            d="M14.88 4.78a3.489 3.489 0 0 0-.37-.9 3.24 3.24 0 0 0-.6-.79 3.78 3.78 0 0 0-1.21-.81 3.74 3.74 0 0 0-2.84 0 4 4 0 0 0-1.16.75l-.05.06-.65.65-.65-.65-.05-.06a4 4 0 0 0-1.16-.75 3.74 3.74 0 0 0-2.84 0 3.78 3.78 0 0 0-1.21.81 3.55 3.55 0 0 0-.97 1.69 3.75 3.75 0 0 0-.12 1c0 .317.04.633.12.94a4 4 0 0 0 .36.89 3.8 3.8 0 0 0 .61.79L8 14.31l5.91-5.91c.237-.233.44-.5.6-.79A3.578 3.578 0 0 0 15 5.78a3.747 3.747 0 0 0-.12-1zm-1 1.63a2.69 2.69 0 0 1-.69 1.21l-5.21 5.2-5.21-5.2a2.9 2.9 0 0 1-.44-.57 3 3 0 0 1-.27-.65 3.25 3.25 0 0 1-.08-.69A3.36 3.36 0 0 1 2.06 5a2.8 2.8 0 0 1 .27-.65c.12-.21.268-.4.44-.57a2.91 2.91 0 0 1 .89-.6 2.8 2.8 0 0 1 2.08 0c.33.137.628.338.88.59l1.36 1.37 1.36-1.37a2.72 2.72 0 0 1 .88-.59 2.8 2.8 0 0 1 2.08 0c.331.143.633.347.89.6.174.165.32.357.43.57a2.69 2.69 0 0 1 .35 1.34 2.6 2.6 0 0 1-.06.72h-.03z" />
+                                    </svg>
+                                </div>
+                                <div class="product-info-txt-namenprice">
+                                    <div class="name">
+                                        <h3>Hyaluronic Acid 2%</h3>
+                                    </div>
+                                    <div class="price">
+                                        <h3><span>NTD</span> 360</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info-txt-wrap-bottom">
+                                <div class="product-info-txt-option">
+                                    <div>AMOUNT</div>
+                                    <select>
+                                        <option value="">Please select an option</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                                <a class="product-info-txt-addtocart-btn">
+                                    ADD TO CART
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="product-info-row">
+                        <div class="img-grid">
+                            <img src="mockuppic/productpage/grid/grid-1.jpg" alt="">
+                            <img src="mockuppic/productpage/grid/grid-2.jpg" alt="">
+                            <img src="mockuppic/productpage/grid/grid-3.jpg" alt="">
+                            <img src="mockuppic/productpage/grid/grid-4.jpg" alt="">
+                        </div>
+                        <h4>Description</h4>
+                        <p>Hyaluronic Acid 2% + B5 provides instant plumping hydration to give softer, smoother,
+                            healthy-looking skin. The lightweight formula replenishes skin’s hydration levels with
+                            all-day results, and helps the skin retain moisture to replump dry, dehydrated skin.
+                            Hyaluronic Acid 2% + B5 also promotes skin suppleness and elasticity, while minimising the
+                            appearance of fine dry lines.</p>
+                        <p>This formulation contains 5 forms of hyaluronic acid, which helps provide hydration to
+                            multiple layers of the surface of skin. Hyaluronic acid is a humectant found naturally in
+                            the skin where it binds to water. The forms included are low-, medium- and high-molecular-
+                            weight molecules, a HA crosspolymer, and hydrolyzed HA.</p>
+                        <p>The formulation also contains ceramides to help keep moisture locked in. Ceramides are lipids
+                            (fatty molecules) found naturally in the skin that help support the skin barrier to keep
+                            skin protected and hydrated. The ceramides used in this formula are known as sphingolipids.
+                        </p>
+                        <p>Pro-vitamin B5 helps support the formation of key skin barrier components like ceramides and
+                            fatty acids, which further helps keep moisture locked in, keeping the skin moisturized for
+                            longer.</p>
+                        <ul>
+                            <h4>Testing Shows</h4>
+                            <li>Provides instant plumping hydration that lasts all day</li>
+                            <li>Gives instantly smoother-feeling skin</li>
+                            <li>Promotes supple skin with improved elasticity</li>
+                            <li>Minimizes the look of fine dry lines</li>
+                        </ul>
+                        <hr>
+                        <div class="other-information">
+                            <div class="other-information-title">
+                                <div>SHIPPING / EXCHANGE / RETURN INFORMATION</div>
+                                <label id="other-information-btn">
+                                    ▲
+                                </label>
+                            </div>
+                            <div class="other-information-txt">
+                                <h4>Shipping</h4>
+                                <p>We provide fast and reliable shipping services worldwide. Orders are typically
+                                    processed and dispatched within 1-2 business days. Delivery times may vary depending
+                                    on your location, but most orders arrive within 7-14 business days. Once your order
+                                    is shipped, you will receive a confirmation email with tracking information to
+                                    monitor your package's journey.</p>
+                                <h4>Exchange</h4>
+                                <p>We want you to be completely satisfied with your purchase. If you wish to exchange an
+                                    item, please contact our customer service team within 30 days of receiving your
+                                    order. Exchanges are subject to item availability. Please ensure the item is unused,
+                                    in its original packaging, and accompanied by proof of purchase for an exchange to
+                                    be processed.</p>
+                                <h4>Return</h4>
+                                <p>In the event that you need to return an item, we accept returns within 30 days of
+                                    delivery. To initiate a return, please contact our customer service team for further
+                                    assistance. Returns must be in new, unused condition and in the original packaging.
+                                    Once we receive and inspect the returned item, we will issue a refund to your
+                                    original payment method, excluding any shipping fees. Refunds may take 5-7 business
+                                    days to process and reflect in your account.</p>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="productpage.js"></script>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="col-sm-11 col-10 footer-container">
+            <div class="footer-info-wrap">
+                <div class="logo-followus-web">
+                    <div class="img-wrap">
+                        <img src="mockuppic/logo-1-w.png" alt="">
+                    </div>
+                    <div class="icon-wrap">
+                        <a src="#" class="icon-img">
+                            <img src="mockuppic/index/footer-followus-icon/instagram.png" alt="">
+                        </a>
+                        <a src="#" class="icon-img">
+                            <img src="mockuppic/index/footer-followus-icon/facebook.png" alt="">
+                        </a>
+                        <a src="#" class="icon-img">
+                            <img src="mockuppic/index/footer-followus-icon/line.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="contactus">
+                    <p>
+                        <span>COMPANY</span>KALE.CO<br>
+                        <span>TEL</span>03-1234-5678<br>
+                        <span>BUSINESS NO.</span>123-45-67890<br>
+                        <span>EMAIL</span>kale@gmail.com<br>
+                        <span>MON - FRI</span>10:00 - 12:30<span></span>13:30 - 17:00<br>
+                        <span>SAT, SUN, HOLIDAY OFF</span>
+                    </p>
+                </div>
+                <div class="subscribeus">
+                    <div class="subscribe-title-web">
+                        <p><span>DOWN FOR MORE? WE GOT YOU.</span><br>All the latest product drops, limited
+                            offers,<br>in-store event info–straight to your inbox.</p>
+                    </div>
+                    <div class="subscribe-title-phone">
+                        <p><span>SUBSCRIBE US</span></p>
+                    </div>
+                    <div class="content">
+                        <form class="subscription">
+                            <input type="email" class="add-email" placeholder="Email Address">
+                            <button class="submit-email-web" type="button">
+                                <span class="before-submit">SUBSCRIBE</span>
+                                <span class="after-submit">Thank you for subscribing!</span>
+                            </button>
+                            <button class="submit-email-phone" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16"
+                                    fill="#2A2825">
+                                    <path
+                                        d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
